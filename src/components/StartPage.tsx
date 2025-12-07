@@ -7,7 +7,7 @@ const StartPage: React.FC<{ onSelect: (m: number) => void; onCancel?: () => void
         <div className="bg-white p-8 rounded-2xl shadow-2xl border border-slate-200 relative">
           {/* 面板右上角背景图片 */}
           <div className="absolute top-4 right-12 w-20 h-20 bg-cover bg-center opacity-25" style={{ 
-            backgroundImage: 'url(/zjulogo.png)',
+            backgroundImage: 'url(' + (process.env.NODE_ENV === 'production' ? '/zjailhstudy/' : '') + 'zjulogo.png)',
             filter: 'hue-rotate(200deg) saturate(2.5) brightness(1.2)'
           }}></div>
           
