@@ -24,6 +24,7 @@ export default defineConfig(({ mode }) => {
       optimizeDeps: {
         include: ['react-syntax-highlighter'],
       },
+      base: '/zjailhstudy/',
       build: {
         outDir: 'docs'
       }
