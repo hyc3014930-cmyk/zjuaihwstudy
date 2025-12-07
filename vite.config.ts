@@ -24,5 +24,8 @@ export default defineConfig(({ mode }) => {
       optimizeDeps: {
         include: ['react-syntax-highlighter'],
       },
+      build: {
+        outDir: 'docs'
+      }
     };
 });
